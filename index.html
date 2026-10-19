@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Official-style web summary of a breast cancer psycho-oncology article.">
+  <title>Breast Cancer Adaptation Study</title>
+  <link rel="icon" type="image/svg+xml" href="assets/brand/favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="assets/vendor/phosphor/style.css">
+  <link rel="stylesheet" href="assets/css/quiz.css">
+  <link rel="stylesheet" href="triage-game.css">
+  <script defer src="article-data.js"></script>
+  <script defer src="quiz-data.js"></script>
+  <script defer src="assets/js/quiz.js"></script>
+  <script defer src="triage-game.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <header class="page-header">
+    <a class="image-banner" href="https://brain.edusoft.ro/index.php/brain" target="_blank" rel="noopener noreferrer" aria-label="BRAIN official journal website">
+      <img src="assets/brand/homeHeaderTitleImage_en_US.jpg" alt="BRAIN. Broad Research in Artificial Intelligence and Neuroscience">
+    </a>
+  </header>
+
+  <main class="app-layout">
+    <aside class="side-panel" aria-label="Application navigation">
+      <div class="side-title"><span>BC</span><strong>Adaptation Study</strong></div>
+      <nav class="section-tabs" aria-label="Application sections">
+        <button class="tab-button is-active" type="button" data-panel-target="overview" aria-current="page">Overview</button>
+        <button class="tab-button" type="button" data-panel-target="quiz">Quiz</button>
+        <button class="tab-button" type="button" data-panel-target="scenario">Psycho-Oncology Triage</button>
+      </nav>
+    </aside>
+
+    <section class="content-stage">
+      <div class="stage-top">
+        <p class="eyebrow">Article overview</p>
+        <p class="article-subtitle">Source: "Anxiety, Depression, Fear of Progression and Illness Adaptation in Breast Cancer Patients"</p>
+        <p class="article-authors">Authors: <strong>Gabriela Rahnea-Nita, Alexandru Bogdan Ciubara, Laura-Florentina Rebegea, Mihai-Teodor Georgescu, Dan Ilie-Damboiu, Anamaria Ciubara, Rares Nicolae Vadana, Laurentiu Tony Hangan, Andreea Georgia Cernea, Ionut Simion Coman, Roxana-Andreea Rahnea-Nita</strong></p>
+        <div class="publication-details" aria-label="Publication details">
+          <p><strong>Journal:</strong> BRAIN. Broad Research in Artificial Intelligence and Neuroscience · Volume 17, Issue 3 · Pages 566-582</p>
+          <p><strong>Publication:</strong> September 2026 <span>·</span> <strong>Submitted:</strong> June 27, 2026 <span>·</span> <strong>Accepted:</strong> August 25, 2026</p>
+          <p><strong>DOI:</strong> <a href="https://doi.org/10.70594/brain/17.3/36" target="_blank" rel="noopener noreferrer">10.70594/brain/17.3/36</a></p>
+        </div>
+      </div>
+
+      <section class="content-panel is-visible" id="overviewPanel" data-panel="overview" aria-label="Research overview">
+        <div id="overviewContent"></div>
+      </section>
+
+      <section class="content-panel" id="scenarioPanel" data-panel="scenario" aria-label="Psycho-Oncology Triage educational game">
+        <div id="scenarioContent"></div>
+      </section>
+
+      <section class="content-panel" id="quizPanel" data-panel="quiz" aria-label="Breast cancer adaptation article quiz">
+        <div id="quizApp"></div>
+      </section>
+    </section>
+  </main>
+
+  <footer class="site-footer"><p>(C) 2010-2026 EduSoft</p></footer>
+
+  <dialog id="figureDialog">
+    <div class="dialog-top">
+      <strong id="dialogTitle">Figure</strong>
+      <button type="button" id="closeDialog" aria-label="Close figure">Close ×</button>
+    </div>
+    <div id="dialogFigure"></div>
+    <p id="dialogCaption"></p>
+  </dialog>
+</body>
+</html>
